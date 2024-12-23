@@ -2,7 +2,6 @@ import select
 import sys
 import utime
 
-def  
 
 def listen(swm):
     poll_obj = select.poll()

@@ -46,19 +46,20 @@ class PCF8575:
         self._read()
 
     def print_pins(self):
+        """
         for i in range(16):
             n_pin = i
             if i > 7:
                 n_pin += 2
             print(f'{n_pin:2d}', end=' ')
-        print('')
+        print('\n')
+        """
 
         for i in range(16):
             n_pin = i
             if i > 7:
                 n_pin += 2
             print(f'{self.pin(n_pin):2d}', end=' ')
-        print('')
 
     def toggle(self, pin):
         pin = self._validate_pin(pin)

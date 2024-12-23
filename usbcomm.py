@@ -1,8 +1,10 @@
 import select
 import sys
-import time
+import utime
 
-def listen():
+def  
+
+def listen(swm):
     poll_obj = select.poll()
     poll_obj.register(sys.stdin, select.POLLIN)
 
@@ -14,3 +16,4 @@ def listen():
             return data
         else:
             continue
+
